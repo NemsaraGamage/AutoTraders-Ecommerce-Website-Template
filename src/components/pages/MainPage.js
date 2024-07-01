@@ -30,6 +30,20 @@ import budgetlogo from '../pics/items/pngegg.png'
 import repairlogo from '../pics/items/2.png'
 import selllogo from '../pics/items/3.png'
 
+import dealImg1 from '../pics/bestDeals/1.avif'
+import dealImg2 from '../pics/bestDeals/2.avif'
+import dealImg3 from '../pics/bestDeals/3.avif'
+import dealImg4 from '../pics/bestDeals/4.avif'
+import dealImg5 from '../pics/bestDeals/5.avif'
+import dealImg6 from '../pics/bestDeals/6.avif'
+
+import cata1 from '../pics/cata/1.avif'
+import cata2 from '../pics/cata/2.avif'
+import cata3 from '../pics/cata/3.avif'
+import cata4 from '../pics/cata/4.avif'
+import cata5 from '../pics/cata/5.avif'
+import cata6 from '../pics/cata/6.avif'
+
 const MainPage = () => { 
 
     const carBrands = [
@@ -51,9 +65,27 @@ const MainPage = () => {
         { name: 'Lincoln', logo: lincolnLogo },
         { name: 'Maserati', logo: maseratiLogo },
         { name: 'Mazda', logo: mazdaLogo },
-      ];
+    ];
+
+    const bestDeals = [
+        { name: 'BMW 4 Series', carImg: dealImg1, price: '$320,0000', desName: 'BMW Series 4', logo: bmwLogo },
+        { name: 'Audi A7', carImg: dealImg2, price: '$73,0000', desName: 'Audi A7', logo: audiLogo },
+        { name: 'Maserati MC20', carImg: dealImg3, price: '$159,999', desName: 'MC20', logo: maseratiLogo },
+        { name: 'Dodge Challenger', carImg: dealImg4, price: '$34.395', desName: 'Challenger', logo: dodgeLogo },
+        { name: 'Jaguar F-TYPE', carImg: dealImg5, price: '$80,200', desName: 'Jaguar', logo: jaguarLogo },
+        { name: 'Chevrolet Camaro', carImg: dealImg6, price: '$20,200', desName: 'Chevrolet', logo: jaguarLogo },
+    ]
+
+    const cataVech = [
+        { name: 'Off Road', cataImg: cata1 },
+        { name: 'Sedan', cataImg: cata2 },
+        { name: 'Van', cataImg: cata3 },
+        { name: 'Truck', cataImg: cata4 },
+        { name: 'Hybrid', cataImg: cata5 },
+        { name: 'Coupes', cataImg: cata6 },
+    ]
   
-      return (
+    return (
         <>
         <div className="backgroundColor">
 
@@ -65,7 +97,6 @@ const MainPage = () => {
                 <img src={t3}></img>
                 <h1>AutoTraders</h1>
                 <p>Finest There Is!</p>
-                {/* <img src={t1}></img> */}
             </div>
 
             {/* brands */}
@@ -120,9 +151,39 @@ const MainPage = () => {
                 </div>
             </div>
 
-            {/* best cars out now*/}
-            <div className="bestCarCon">
-                <h3>Best Car Right Now</h3>
+            {/* best deals out now*/}
+            <div className="infoCon bestCarCon">
+                <h3>Best Deals Right Now</h3>
+
+                <div className="deal-container">
+                    <div className="deal-grid-container">
+                        {bestDeals.map((deal, index) => (
+                            <div key={index} className="deal-grid-item">
+                                <img src={deal.carImg} alt={deal.desName} />
+                                <p><a>{deal.name}</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a>{deal.price}</a></p>
+                                <button>More Info</button>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
+            {/* Catagories */}
+            <div className="infoCon bestCarCon">
+                <h3>Catagories</h3>
+
+                <div className="deal-container">
+                    <div className="deal-grid-container">
+                        {cataVech.map((cata, index) => (
+                            <div key={index} className="cata-grid-item">
+                                <div className="image-container">
+                                    <img src={cata.cataImg} alt={cata.name} />
+                                    <div className="hover-text">{cata.name}</div>
+                                </div>
+                            </div>   
+                        ))}
+                    </div>
+                </div>
             </div>
 
             {/* footer */}
