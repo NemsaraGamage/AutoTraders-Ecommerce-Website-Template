@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import '../components/styles.css';
 import autoLogo from './pics/logo.png'
 
+// npm run deploy
+
 const NavBar = () => {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
