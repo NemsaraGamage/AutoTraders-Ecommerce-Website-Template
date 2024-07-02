@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/AutoTraders-Ecommerce-Website-Template/static/css/main.bd62a018.css",
+    "main.css": "/AutoTraders-Ecommerce-Website-Template/static/css/main.83607f8f.css",
     "main.js": "/AutoTraders-Ecommerce-Website-Template/static/js/main.5435c465.js",
     "static/js/453.6b3651ed.chunk.js": "/AutoTraders-Ecommerce-Website-Template/static/js/453.6b3651ed.chunk.js",
     "static/media/Gugi-Regular.ttf": "/AutoTraders-Ecommerce-Website-Template/static/media/Gugi-Regular.e4e242ff3ba08f9fe398.ttf",
@@ -49,12 +49,12 @@
     "static/media/Lincoln.avif": "/AutoTraders-Ecommerce-Website-Template/static/media/Lincoln.82e8eccf7fd912817f39.avif",
     "static/media/Dodge.avif": "/AutoTraders-Ecommerce-Website-Template/static/media/Dodge.3833c2e92bc16429397b.avif",
     "static/media/Kia.avif": "/AutoTraders-Ecommerce-Website-Template/static/media/Kia.7146efc82d5b5d3c54bc.avif",
-    "main.bd62a018.css.map": "/AutoTraders-Ecommerce-Website-Template/static/css/main.bd62a018.css.map",
+    "main.83607f8f.css.map": "/AutoTraders-Ecommerce-Website-Template/static/css/main.83607f8f.css.map",
     "main.5435c465.js.map": "/AutoTraders-Ecommerce-Website-Template/static/js/main.5435c465.js.map",
     "453.6b3651ed.chunk.js.map": "/AutoTraders-Ecommerce-Website-Template/static/js/453.6b3651ed.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd62a018.css",
+    "static/css/main.83607f8f.css",
     "static/js/main.5435c465.js"
   ]
 }
