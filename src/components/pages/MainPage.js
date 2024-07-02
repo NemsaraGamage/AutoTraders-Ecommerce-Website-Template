@@ -2,6 +2,7 @@ import React from "react";
 import '../styles.css';
 import NavBarHead from "../NavBar";
 import FooterNav from "../Footer"
+import { useNavigate } from 'react-router-dom';
 import t1 from "../pics/t1.jpg"
 import t2 from "../pics/t2.jpg"
 import t3 from "../pics/t3.jpg"
@@ -48,6 +49,12 @@ import cata6 from '../pics/cata/6.avif'
 import contentImg from '../pics/content/1.png'
 
 const MainPage = () => { 
+
+    const navigate = useNavigate();
+
+    const VehiclePage = () => {
+        navigate('/VehiclePage'); 
+    };
 
     const carBrands = [
         { name: 'BMW', logo: bmwLogo },
@@ -181,6 +188,10 @@ const MainPage = () => {
                         ))}
                     </div>
                 </div>
+
+                <div className="cataButton">
+                    <button onClick={VehiclePage}>More Deals</button>
+                </div>
             </div>
 
             {/* Catagories */}
@@ -198,6 +209,10 @@ const MainPage = () => {
                             </div>   
                         ))}
                     </div>
+                </div>
+
+                <div className="cataButton">
+                    <button onClick={VehiclePage}>See More</button>
                 </div>
             </div>
 
