@@ -81,20 +81,6 @@
     transform: scale(1.1);
 }
 
-.search-bar {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-}
-
-.search-bar input {
-    padding: 8px;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    width: 280px;
-}
-
 .auth-buttons {
     display: flex;
     align-items: center;
@@ -123,13 +109,6 @@
     border: 2px solid #fff;
 }
 
-.lineNav{
-    font-size: 30px;
-    font-weight: 700;
-    color: black;
-    margin-left: 10px;
-}
-
 /*--------------------- Main page ---------------------*/
 
 .introCon{
@@ -141,6 +120,10 @@
 .introCon img:nth-of-type(1){
     width: 100%;
     margin-bottom: 20px;
+}
+
+.banner2 img{
+    width: 100%;
 }
 
 .introCon h1{
@@ -239,7 +222,7 @@
     color: #333;
 }
 
-/* info */
+/* available Service */
 
 .infoCon{
     margin-top: 5%;
@@ -320,11 +303,47 @@
     font-size: 1em;
     align-self: flex-end; 
     margin-top: auto; 
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s, color 0.2s;
 }
   
   .card button:hover {
     background-color: black;
   }
+
+/* content banner */
+
+.contentBan {
+    width: 80%; /* Fixed width */
+    max-width: 1200px; /* Maximum width */
+    margin: 55px auto; 
+    display: flex;
+    flex-wrap: wrap; 
+    background-color: ghostwhite;
+}
+
+.contentBan .ban1, .contentBan .ban2 {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.contentBan .ban1 h3{
+    font-size: 3em;
+    font-family: 'Changa-VariableFont';
+    margin-top: 25px;
+    color: #004792;
+}
+
+.contentBan .ban1 p{
+    font-family: 'Gugi-Regular';
+    margin-top: 40px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.contentBan .ban2 img {
+    width: 100%; 
+    max-width: 100%; 
+}
 
   /* best car */
 
@@ -357,7 +376,7 @@
 .deal-grid-item {
     position: relative;
     text-align: center;
-    background-color: #1B1B1B;
+    background-color: #020403;
     border-radius: 24px;
     transition: transform 0.3s, box-shadow 0.3s;
     padding: 10px 2px 20px 2px;
@@ -400,26 +419,27 @@
     background-color: white;
     color: black;
     border: none;
-    padding: 4px 8px 4px 8px;
+    padding: 4px 8px;
     border-radius: 14px;
     margin-top: 15px;
     font-size: 1em;
     cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.deal-grid-item button:hover {
+    background-color: #020403;
+    color: #fff;
 }
 
 /* catagories */
 
-.cata-grid {
+.cata-grid-item {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.cata-grid-item {
     width: 200px;
     height: 250px;
-    
     box-sizing: border-box;
 }
 
@@ -451,15 +471,10 @@
     color: white;
     pointer-events: none;
     font-family: 'Changa-VariableFont';
-    font-size: 1.7em;
+    font-size: 1.9em;
     font-weight: 800;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 14px;
-}
-
-.image-container:hover .hover-text {
-    display: flex;
-    cursor: pointer;
 }
 
 /* --------------------- footer --------------------- */
@@ -524,6 +539,27 @@
         width: 100%;
         margin-bottom: 20px;
       }
+
+      /* content */
+    
+    .contentBan {
+        flex-direction: column; /* Stack the items vertically */
+        align-items: center; /* Center the items */
+        text-align: center; /* Center the text */
+    }
+
+    .contentBan .ban1, .contentBan .ban2 {
+        width: 100%; /* Make each section take full width */
+        margin: 20px 0; /* Add margin for spacing */
+    }
+
+    .contentBan .ban2 img {
+        width: 80%; /* Adjust the image width for smaller screens */
+    }
+
+    .contentBan .ban1 p{
+        padding: 0 20px 0 20px;
+    }
 }
 
 @media (max-width: 870px) {
@@ -617,7 +653,7 @@
     .banner2{
         display: none;
     }
-    
+
     /* deals */
     
     .deal-grid-item {
@@ -651,10 +687,14 @@
         font-size: 32px;
     }
 
-      /* main page */
-      .grid-container {
+    /* main page */
+    .grid-container {
         display: grid;
         grid-template-columns: repeat(2, 2fr);
         gap: 20px;
+    }
+
+    .card {
+       margin-left: -0.2px;
     }
 }

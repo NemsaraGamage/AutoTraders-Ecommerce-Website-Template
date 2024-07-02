@@ -11,14 +11,10 @@ const NavBar = () => {
       </div>
       <div className="nav-links">
         <Link to="/" className="nav-link">Home</Link>
-        <Link to="" className="nav-link">Vehicle</Link>
+        <Link to="/VehiclePage" className="nav-link">Vehicle</Link>
         <Link to="" className="nav-link">Plans</Link>
         <Link to="" className="nav-link">Contact</Link>
       </div>
-      <div className="search-bar">
-        <input type="text" placeholder="Search..." />
-      </div>
-      <p className='lineNav'> | </p>
       <div className="auth-buttons">
         <Link to="/" className="auth-button login">Login</Link>
       </div>

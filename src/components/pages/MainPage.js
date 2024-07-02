@@ -5,6 +5,7 @@ import FooterNav from "../Footer"
 import t1 from "../pics/t1.jpg"
 import t2 from "../pics/t2.jpg"
 import t3 from "../pics/t3.jpg"
+import t4 from "../pics/t4.jpg"
 
 import bmwLogo from '../pics/carLogo/BMW.avif'; 
 import audiLogo from '../pics/carLogo/Audi.avif'; 
@@ -43,6 +44,8 @@ import cata3 from '../pics/cata/3.avif'
 import cata4 from '../pics/cata/4.avif'
 import cata5 from '../pics/cata/5.avif'
 import cata6 from '../pics/cata/6.avif'
+
+import contentImg from '../pics/content/1.png'
 
 const MainPage = () => { 
 
@@ -151,9 +154,21 @@ const MainPage = () => {
                 </div>
             </div>
 
+            {/* content ban */}
+            <div className="contentBan">
+                <div className="ban1">
+                    <h3>We Are Here For You</h3>
+                    <p>Customer satisfaction is our top priority because it builds lasting relationships and fosters loyalty. By prioritizing consumer 
+                        wishes, we deliver products and services that exceed expectations, driving innovation and enhancing our reputation.</p>
+                </div>
+                <div className="ban2">
+                    <img src={contentImg}></img>
+                </div>
+            </div>
+
             {/* best deals out now*/}
             <div className="infoCon bestCarCon">
-                <h3>Best Deals Right Now</h3>
+                <h3>Best Deals</h3>
 
                 <div className="deal-container">
                     <div className="deal-grid-container">
